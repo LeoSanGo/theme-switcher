@@ -14,7 +14,7 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
 
   return (
     <Container>
-      Hello world
+      Theme Switcher
       <Switch
         onChange={toggleTheme}
         checked={title === 'dark'}
@@ -23,7 +23,7 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
         height={10}
         width={40}
         handleDiameter={20}
-        onColor={shade(0.3, colors.secondary)}
+        onColor={shade(0.6, colors.secondary)}
         offColor={shade(0.15, colors.primary)}
       />
     </Container>
